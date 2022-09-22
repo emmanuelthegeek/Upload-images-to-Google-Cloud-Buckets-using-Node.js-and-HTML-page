@@ -14,7 +14,6 @@ document.getElementById("submitBtn").addEventListener("click", () => {
   let file = inputElem.files[0];
   let blob = file.slice(0, file.size, "image/jpeg");
   newFile = new File([blob], `${postid}_post.jpeg`, { type: "image/jpeg" });
-  // Build the form data - You can add other input values to this i.e descriptions, make sure img is appended last
   let formData = new FormData();
   formData.append("imgfile", newFile);
   fetch("/upload", {
