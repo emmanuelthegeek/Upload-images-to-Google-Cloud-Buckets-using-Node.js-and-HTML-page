@@ -22,7 +22,7 @@ const storage = new Storage({
 });
 const bucket = storage.bucket(""); // Get this from Google Cloud -> Storage
 
-// Gets all files in the defined bucket
+
 app.get("/upload", async (req, res) => {
   try {
     const [files] = await bucket.getFiles();
