@@ -32,7 +32,7 @@ app.get("/upload", async (req, res) => {
     res.send("Error:" + error);
   }
 });
-// Streams file upload to Google Storage
+
 app.post("/upload", multer.single("imgfile"), (req, res) => {
   console.log("Made it /upload");
   try {
