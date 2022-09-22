@@ -55,7 +55,7 @@ app.post("/upload", multer.single("imgfile"), (req, res) => {
 app.get("/", (req, res) => {
   res.sendFile(src + "/index.html");
 });
-// Start the server on port 8080 or as defined
+
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
