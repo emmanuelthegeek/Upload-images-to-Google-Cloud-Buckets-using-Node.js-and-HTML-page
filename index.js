@@ -51,7 +51,7 @@ app.post("/upload", multer.single("imgfile"), (req, res) => {
     res.status(500).send(error);
   }
 });
-// Get the main index html file
+
 app.get("/", (req, res) => {
   res.sendFile(src + "/index.html");
 });
