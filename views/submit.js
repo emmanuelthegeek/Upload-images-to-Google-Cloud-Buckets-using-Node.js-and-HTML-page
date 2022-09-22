@@ -23,7 +23,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     .then((res) => res.text())
     .then(loadPosts());
 });
-// Loads the posts on page load
+
 function loadPosts() {
   fetch("/upload")
     .then((res) => res.json())
